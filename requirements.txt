@@ -2,3 +2,8 @@ asgiref==3.8.1
 Django==5.0.7
 sqlparse==0.5.1
 celery
+pika
+gunicorn
+uvicorn
+djangorestframework
+requests

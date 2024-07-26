@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'userprofile'
 ]
 
@@ -124,5 +125,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CELERY_BROKER_URL = 'amqp://myuser:mypassword@localhost/myvhost'
+CELERY_BROKER_URL = "amqp://guest:guest@rabbitmq:5672/"
 CELERY_RESULT_BACKEND = 'rpc://'
